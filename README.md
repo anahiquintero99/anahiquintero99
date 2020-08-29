@@ -1,12 +1,14 @@
-### Hi there 👋
+### Hi there, I'm a newbie programmer and this is some info about me: 👋
 
-## My name is Anahi but you can call me Anai Bua 😉
-
-- 🔭 I’m currently working on my personal portfolio
-- 🌱 I’m currently learning web development
-- 👯 I’m looking to collaborate on amazing projects
-- 💬 Ask me about python
-- 📫 How to reach me: anitaquintero99@gmail.com
-- 😄 Pronouns: she, her
-- ⚡ Fun fact: I'm a pug
+```python
+me = {
+  'name': 'Anai', 👶
+  'pronouns': ['she', 'her'], 👰
+  'age': 21, 👧
+  'address': 'CDMX', 🌇
+  'hobbies': ['programming', 'reading', 'drawing', 'eating', 'fun activities', 'enjoying life'], 💻
+  'likes': ('dogs', 'raccoons', 'movies', 'series', 'chocolate'), 🐶🦝️
+  'technologies': ['python', 'html', 'css', 'c'] 🐍
+}
+```
 
