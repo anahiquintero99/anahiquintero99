@@ -4,7 +4,7 @@
 me = {
   'name': 'Anai', 👶
   'pronouns': ['she', 'her'], 👰
-  'age': 21, 👧
+  'age': 24, 👧
   'address': 'CDMX', 🌇
   'hobbies': ['programming', 'reading', 'drawing', 'eating', 'fun activities', 'enjoying life'], 💻
   'likes': ('dogs', 'raccoons', 'movies', 'series', 'chocolate'), 🐶🦝️
