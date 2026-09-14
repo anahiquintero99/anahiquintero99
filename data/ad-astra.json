@@ -1,0 +1,33 @@
+{
+ "actualizado": "2026-09-13",
+ "rutas": [
+  {
+   "ruta": "Inglés",
+   "nivel": 0,
+   "aprobados": 0,
+   "total": 8,
+   "tema": "N0·1 La oración y el verbo be (EGU U1–2; Azar 1)"
+  },
+  {
+   "ruta": "Programación",
+   "nivel": 0,
+   "aprobados": 0,
+   "total": 8,
+   "tema": "N0·1 Valores, tipos y variables (TP 1–2; PCC 2; EJ 1)"
+  },
+  {
+   "ruta": "Matemáticas",
+   "nivel": 0,
+   "aprobados": 0,
+   "total": 8,
+   "tema": "N0·1 Enteros, negativos y orden de operaciones (PA 1, 2.1, 3; Lang 1)"
+  },
+  {
+   "ruta": "Paper IAC",
+   "nivel": 0,
+   "aprobados": 0,
+   "total": 7,
+   "tema": "N0·1 Qué es un paper y la primera pasada (Keshav §2.1)"
+  }
+ ]
+}

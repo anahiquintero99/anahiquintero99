@@ -1,0 +1,37 @@
+name: annie lab + snake
+on:
+  schedule:
+    - cron: "0 13 * * *"   # 07:00 CDMX · modo día
+    - cron: "0 1 * * *"    # 19:00 CDMX · modo noche
+  workflow_dispatch:
+  push:
+    branches: [master]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Sin PROFILE_TOKEN (PAT con scope repo) el token de Actions solo ve repos públicos y los
+      # números salen incompletos: en ese caso se conserva el lab.svg anterior (generado localmente
+      # con `python3 scripts/lab.py` + `bash scripts/publicar-lab.sh`).
+      - run: mkdir -p dist
+      # Annie Lab corre siempre: visitas en vivo con GITHUB_TOKEN; estadísticas de data/stats.json si no hay PAT
+      - name: annie-lab.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: python3 scripts/annie_lab.py dist/annie-lab.svg
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: anahiquintero99
+          outputs: |
+            dist/snake.svg?color_snake=#E84393&color_dots=#FFE3F0,#F8BFD8,#F393C2,#EE5FA5,#C9A7F5
+            dist/snake-dark.svg?palette=github-dark&color_snake=#FF7AC3&color_dots=#2A1A24,#7A3560,#B84A8A,#EE5FA5,#C9A7F5
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

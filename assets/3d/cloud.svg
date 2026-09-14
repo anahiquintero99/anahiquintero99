@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="180" viewBox="0 0 220 180"><defs>
+  <radialGradient id="sph" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".25" stop-color="#FFD1E6"/><stop offset=".6" stop-color="#F58BC0"/><stop offset="1" stop-color="#B8347A"/></radialGradient>
+  <radialGradient id="lav" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".3" stop-color="#E6D6FF"/><stop offset=".65" stop-color="#C9A7F5"/><stop offset="1" stop-color="#7A4FCF"/></radialGradient>
+  <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB6D9" stop-opacity=".9"/><stop offset=".35" stop-color="#C9A7F5" stop-opacity=".7"/><stop offset=".7" stop-color="#A9E4FF" stop-opacity=".7"/><stop offset="1" stop-color="#FFD9A8" stop-opacity=".8"/></linearGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".7"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><ellipse cx="110.0" cy="166" rx="66.0" ry="8" fill="#D8347F" opacity=".22" filter="url(#shadow)"/><g><animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="3.4s" repeatCount="indefinite"/>
+<g id="cl"><circle cx="70" cy="110" r="38"/><circle cx="110" cy="84" r="48"/><circle cx="156" cy="106" r="40"/><rect x="60" y="106" width="110" height="44" rx="22"/></g>
+<use href="#cl" fill="url(#sph)"/><use href="#cl" fill="url(#holo)" opacity=".25"/>
+<ellipse cx="96" cy="60" rx="30" ry="14" fill="url(#gloss)" transform="rotate(-12 96 60)"/>
+<ellipse cx="60" cy="96" rx="14" ry="8" fill="#fff" opacity=".6"/></g></svg>

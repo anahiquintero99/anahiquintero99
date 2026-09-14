@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><defs>
+  <radialGradient id="sph" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".25" stop-color="#FFD1E6"/><stop offset=".6" stop-color="#F58BC0"/><stop offset="1" stop-color="#B8347A"/></radialGradient>
+  <radialGradient id="lav" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".3" stop-color="#E6D6FF"/><stop offset=".65" stop-color="#C9A7F5"/><stop offset="1" stop-color="#7A4FCF"/></radialGradient>
+  <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB6D9" stop-opacity=".9"/><stop offset=".35" stop-color="#C9A7F5" stop-opacity=".7"/><stop offset=".7" stop-color="#A9E4FF" stop-opacity=".7"/><stop offset="1" stop-color="#FFD9A8" stop-opacity=".8"/></linearGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="rim" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".7"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><ellipse cx="100.0" cy="186" rx="60.0" ry="8" fill="#D8347F" opacity=".22" filter="url(#shadow)"/><g><animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="3.4s" repeatCount="indefinite"/>
+<path id="hp" d="M100 168 C60 138 28 112 28 76 C28 50 48 32 72 32 C86 32 96 40 100 50 C104 40 114 32 128 32 C152 32 172 50 172 76 C172 112 140 138 100 168Z"/>
+<use href="#hp" fill="url(#sph)"/><use href="#hp" fill="url(#holo)" opacity=".3"/>
+<ellipse cx="66" cy="62" rx="22" ry="13" fill="url(#gloss)" transform="rotate(-30 66 62)"/>
+<use href="#hp" fill="none" stroke="url(#rim)" stroke-width="3"/></g></svg>
